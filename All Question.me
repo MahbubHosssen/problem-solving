@@ -1,0 +1,325 @@
+// Day 1;
+
+//? Q: Write a function findLongestWord that takes a string as input and returns the longest word in the string, if there are multiple longest words, return the first one encountered.
+
+//* Contains:
+
+//? The input string may contain alphabetic charecters, digits, spaces and punctuation.
+//? The input string is non empty
+//? The input string may contain multiple words separated by spaces.
+
+//* Note:
+//? if the input string is empty or contains only whitespace, the function should return false
+//? The function should ignore leading and trailing whitespace when determine the longest word.
+
+// Example:
+// console.log(findLongestWord("Watch thapa technical javascript course on youtube"))
+
+----------------------------------------------------------------------------------------------
+
+// Day 2;
+
+//? Q: You are required to implement a function generateHash that generates a hash tag from a given input string. The hash Tag should be constructed as follows.
+
+//? The input string should be converted to a hash tag formate, where each word is capitalized and concatenated together without spaces.
+//? If the length of the input string is generate than 280 charecters or if the input string is empty or contains only whitespaces, the function should return false.
+//? Otherwise, the function should return the generated hash tag prefixed with it.
+//* Write a function generateHash to accomplish this task.
+
+//* Example:
+// console.log(generateHash("My name is Mahbub Hossen")) // output = "#MyNameIsMahbubHossen"
+
+-----------------------------------------------------------------------------------------------
+
+// Day 3;
+
+//*  Count Occurances of charecters  *//
+
+//? Q: Write a function called countChar that takes two parameters: a string and a charecter to count. The function should return the number of times the specified charecter appears in the string.
+
+// Example:
+console.log(countChar("MissIssippi", "I")) //output: 4;
+
+//*todo contrains:
+// The function should be case-sensitive.
+// The function should handle both lowercase and uppercase charecter.
+// The charecter parameter can be any printable ASCII charecter (The function should accept any charecter that is part of the ASCII charecter set and is printable)
+
+-----------------------------------------------------------------------------------------------
+
+// Day 4;
+//? Q: Write a function called checkTriangleType that takes three parameters representing the lengths of the sides of a triangle. The function should return a string indicating the type iof triangle: "equilateral", "isosceles", or "scalene".
+
+//* Examples:
+console.log(checkTriangleType(3, 3, 3)) //output: "equilateral";
+console.log(checkTriangleType(3, 4, 3)) //output: "isosceles";
+console.log(checkTriangleType(5, 8, 6)) //output: "scalene";
+
+//todo the function should adhere to the following rules:
+//? If all three side are equal length, return "equilateral"
+//? If only two sides are equal length, return "isosceles"
+//? If all three sides are different lengths, return "scalene";
+
+-------------------------------------------------------------------------------------------------
+
+// Day 5
+//? Q: Write a function to sort an array of numbers in an ascending order
+
+//* Example:
+console.log(sortAscending([5, 3, 1, 8])); //output: [1, 3, 5, 8]
+console.log(sortAscending([5, 3, 10, 8])); //output: [3, 5, 8, 10]
+console.log(sortAscending[0]);
+
+// todo Requirements:
+//? The function should take an array of numbers as input.
+//? If should return a new array with the numbers sorted in ascending order.
+//? The original array should remain unchanged.
+//? You are not allowed to use the built-in sort() method.
+
+-------------------------------------------------------------------------------------------
+
+// Day 6;
+//? Q: Write a function to determine whether a given string is a palindrome or not. A palindrome is a word phrase, number or other sequence of charecters that reads the same forward and backward, ignoring spaces, punctuation and capitalization.
+
+console.log(isPalindrome("A man, a plan, a canal, panama")) //output: true;
+console.log(isPalindrome("racecar")) //output: true;
+console.log(isPalindrome("hello")) //output: flase;
+
+//* Contrains:
+
+// The input string may contain letters, digits, spaces, punctuation and special charecters.
+// The function should be case-insensitive, meaning "Racecar" and "racecar" should be considered the same.
+// Ignore spaces, punctuation and special charecters when determinig if a string is palindrome.
+// The function should return true if the input string is palindrome and false otherwise.
+
+--------------------------------------------------------------------------------------------
+
+// Day 7;
+//? Q: Write a function findMax that takes an array of numbers as input and returns the maximum numbers in the array.
+
+// Example Usage:
+console.log(findMax([1, 5, 3, 9, 2])) //output : 9;
+console.log(findMax([-10, -5, -3, -9, -2])) //output : -2;
+console.log(findMax([5])) // output : 5;
+
+---------------------------------------------------------------------------------------------
+
+// Day 8;
+
+---------------------------------------------------------------------------
+
+// Day 9;
+//  Calculate Average  //
+
+//? Q: Write a function called calculateAverage that takes an array of numbers as input and returns the average of those numbers.
+
+//* Your Function should:
+// accept an array of numbers as input.
+// Calculate the sum of all the numbers in the array.
+// Devide the sum by the total number of elements in the array to find the average.
+// Return the calculate average
+
+//* Example:
+console.log(calculateAverage([5, 10, 2, 8])) //output : 6.25;
+
+//* Note:
+// Ensure the function handles arrays of any length.
+// The average should be returned as a floating point number.
+
+-------------------------------------------------------------------------------------------
+
+// Day 10;
+//? Q: Write a function arraysAreEqual that takes two arrays arr1 and arr2 as input and returns true if the arrays are equal (i.g, contain the same elements in the same order), and false otherwise.
+
+//* Example: 
+console.log(arraysAreEqual([1, 2, 3], [1, 2, 3])) //output : true;
+console.log(arraysAreEqual([1, 2, 3], [1, 2, 4])) //output : false;
+console.log(arraysAreEqual([], [])) //output : true;
+
+//* Note:
+// The function should return false if the arrays have different lengths.
+// The function should compare each element of arr1 with the corresponding element in arr2.
+// The function should return true only if all elements in arr1 are equal to their corresponding elements in arr2.
+
+---------------------------------------------------------------------------------------------
+
+// Day 11;
+//? Q: Write a function that takes a number as input and returs the sum of its digits.
+
+//* Example:
+// console.log(sumOfDigits(1234)) //output: 10;
+// console.log(sumOfDigits(4321)) //output: 10;
+// console.log(sumOfDigits(123456)) //output: 21;
+
+//* Constrains:
+// The input number will always be a positive integer.
+// The input number can have a multiple digits.
+// The output should be the sum of all the digits in the input number.
+
+//* Homework:
+// This function calculates the sum of digits without converting the number to a string.
+
+-----------------------------------------------------------------------------------------
+
+// Day 12;
+
+//? Q: Write a function that takes an array of integers as input and removes any duplicte elements, return a new array with only the unique elements.
+
+//* Examlple:
+console.log(removeDuplicates([1, 2, 3, 2, 1, 4])) //output : [1, 2, 3, 4];
+console.log(removeDuplicates([5, 6, 7, 7, 8, 8, 9])) //output : [5, 6, 7, 8, 9];
+console.log(removeDuplicates([1, 2, 3, 4])) //output : [1, 2, 3, 4];
+console.log(removeDuplicates([])) //output : [];
+
+// The new Set() method in javascript creates a new set object. A set object is a collection of unique values. It can store any type of value, whether primitive values or object references.
+
+//* Constrains:
+// The input array may contain both positive and negative integers.
+// The input array may be empty.
+// The elements in the input array are not guaranteed to be sorted.
+// The output array should return the original order of elements from the input array.
+
+----------------------------------------------------------------------------------------
+
+// Day 13;
+//? Q: Write a function that takes a string as input and returns the count of vowels in that string. Consider 'a', 'e', 'i', 'o', 'u' as vowels (both lowercase and uppercase).
+
+//* Example:
+console.log(countVowels("Helloo World")) //output : 4;
+console.log(countVowels("thE quIck brOwn fOx")) //output : 5;
+console.log(countVowels("Brrp")) //output : 0;
+
+//* Constrains:
+// The input string may contain letters in both uppercase and lowercase.
+// The ouput should be a non-negative integer representing the count of vowels in the input string.
+
+-------------------------------------------------------------------------------
+
+// Day 14;
+
+//? Q: Write a function called isPowerOfTwo that takes an integer number as input and returns true if number is a power of two, and false otherwise.
+
+//* Example:
+console.log(isPowerOfTwo(8)) //output : true;
+console.log(isPowerOfTwo(7)) //output : false;
+
+//* Notes:
+// The input number will be a positive integer.
+// Zero and negative integers are not considered powers of two.
+// The function should return true if the given number is a power of 2, and false otherwise.
+
+// We can solve it using bitwise operator too but its your chance todo it and let me know in the comment section
+
+-----------------------------------------------------------------------------------------------------
+
+// Day 15;
+//? Q: Write a function to calculate the sum of all elements in an array. For example given the array [1, 2, 3] the function should return 14 because 1*1 + 2*2 + 3*3 = 1 + 4 + 9 = 14.
+
+//* Example usage:
+console.log(sumOfSquares([1, 2, 3])) //output : 14;
+
+-----------------------------------------------------------------------------------------------------
+
+// Day 16;
+//* Find the minimum value in an array *//
+
+//? Q: Write a function findMin that takes an array of numbers as input and returns the minimum value found in the array.
+
+//* Example: 
+console.log(findMin([5, 10, 2, 8])) //output : 2;
+console.log(findMin([5, -3, 0, 12, -7])) //output : 2;
+console.log(findMin([])) //output : undefind (or any suitable message for empty array);
+
+
+//* Constrains:
+//? The input array may contain both positive and negative integers.
+//? The input array may be empty.
+//? The input array may contain duplicate values.
+
+------------------------------------------------------------------------------------------------
+
+// Day 17;
+//? Q: Write a function to convert a string to camelCase and snake-case;
+
+//*Example:
+console.log(camelCase("hello world")) //output : helloWorld
+
+//* todo Homework
+console.log(snake_case("helloWorld")) //output : hello_world
+
+----------------------------------------------------------------------------------------------
+
+// Day 18;
+//? Q: Write a function to check if a charecter is uppercase or lowecase.
+
+//* Example Usage:
+console.log(isUpperCase("S")) //output : true;
+console.log(isUpperCase("s")) //output : false;
+
+
+//* contrains:
+// The input charecter will be a single charecter.
+// The charecter can be any printable ASCII charecter.
+// You can assume that the input will always be a string of length 1.
+
+//* Note: 
+// Ensure that the function correctly identifies uppercase charecters based on their ASCII values.
+// optimize the function to handle edge cases officientlty.
+
+-----------------------------------------------------------------------------------
+
+// Day 19;
+
+//? Q: Write a function to check if a given string starts with a spacific substring.
+
+//* Input: 
+//? str: A string (e.g, 'Hello world')
+//? subStr : A substring to check if it starts the given string (e.g, hello')
+//? Output : true if the given string starts with the spacifid substring, otherwise false.
+
+//* Example:
+console.log(startWith("Hello world", "hello")) //output: true;
+console.log(startWith("Hello world", "world")) //output: false;
+
+-----------------------------------------------------------------------------------------
+
+// Day 20;
+//? Q: Write a function to reverse a string without using an built-in methods or libraries. The function should take an string as input and return the reversed string.
+
+//* Example:
+console.log(reverseStr("Hello")) //output: "olleh";
+
+----------------------------------------------------------------------------------------
+
+//Day 21;
+//? Q: Write a function called calculateMean that takes an array of numbers as input and returns the mean (average) of those numbers.
+
+//* Todo in match, the mean is the average of a set of numbers or the numeric value that represents the center of a calculation of numbers.
+
+//* Constrins:
+// The input array may contain positive and negative integers.
+// The input array may be empty. if it is empty, the function should return 0;
+
+//* Example:
+console.log(calculateMean([1, 2, 3, 4, 5])); //output: 3;
+console.log(calculateMean([10, 20, 30])); //output: 20;
+console.log(calculateMean([-1, 0, 1])); //output: 0;
+console.log(calculateMean([])); //output: 0;
+
+-------------------------------------------------------------------------------------------
+
+//Day 22;
+//? Q: Writea javaScript function findMedian(arr) that takes an array of numbers as input and returns the median value. If the array has an even number of elements, return the avarage of the two middle value.
+
+//* Example:
+// The median of 3, 3, 5, 9, 15 is 5. If there is an even number of abservations, then there is no single middle value; the median is then usually defined to be the mean of the two middle values: so the median of 3, 5, 7, 9 is (5 + 7)/2 = 6;
+
+console.log(findMedian([5, 3, 9, 1, 7])); //output: 9;
+console.log(findMedian([2, 4, 6, 8])); //output: 5;
+console.log(findMedian([1, 3, 5, 7, 9, 11])); //output: 6;
+
+
+//todo Tips:
+// Sort the array in ascending order.
+// If the array has an old number of elements, the median is the middle element.
+// If the array has an even number of elements, the median is the average of the two middle elements.
